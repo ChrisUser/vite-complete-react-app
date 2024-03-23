@@ -2,7 +2,7 @@
 
 # Usage
 
-To clone and use this template type the following commands
+To clone and use this template type the following commands:
 
 ## npm
 
@@ -40,6 +40,8 @@ yarn
 yarn dev
 ```
 
+<br />
+
 > [!TIP]
 > Remember to update the project name inside the `package.json` file.
 
@@ -56,6 +58,11 @@ yarn dev
 -   [ESlint](https://eslint.org/) & [Prettier](https://prettier.io/)
 
 ---
+
+<br />
+
+> [!TIP]
+> After cloning the repo you can delete all the previous text for a cleaner README.
 
 <br />
 
