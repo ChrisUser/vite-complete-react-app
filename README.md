@@ -1,5 +1,62 @@
 <h1 align="center">New React App</h1>
 
+# Usage
+
+To clone and use this template type the following commands
+
+## npm
+
+```sh
+npx degit chrisuser/vite-complete-react-app my-app
+```
+
+```sh
+cd my-app
+```
+
+```sh
+npm install
+```
+
+```sh
+npm dev
+```
+
+## yarn
+
+```sh
+yarn degit chrisuser/vite-complete-react-app my-app
+```
+
+```sh
+cd my-app
+```
+
+```sh
+yarn
+```
+
+```sh
+yarn dev
+```
+
+> [!TIP]
+> Remember to update the project name inside the `package.json` file.
+
+<br />
+
+## ⚗️ Technologies list
+
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [Sass](https://sass-lang.com/)
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
+-   [Router](https://reactrouter.com/)
+-   [Axios](https://axios-http.com/)
+-   [Moment](https://momentjs.com/)
+-   [ESlint](https://eslint.org/) & [Prettier](https://prettier.io/)
+
+---
+
 <br />
 
 This is a blank README file that you can customize at your needs.\
@@ -16,7 +73,7 @@ In the project directory, you can run:
 ## ⚡️ start
 
 ```
-yarn start
+npm start
 ```
 
 or
@@ -33,7 +90,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## 🧪 test
 
 ```
-yarn test
+npm test
 ```
 
 or
@@ -49,7 +106,7 @@ Launches the test runner in the interactive watch mode.
 ## 🦾 build
 
 ```
-yarn build
+npm build
 ```
 
 or
@@ -68,7 +125,7 @@ The build is minified and the filenames include the hashes.
 ## 🧶 lint
 
 ```
-yarn lint
+npm lint
 ```
 
 or
@@ -84,7 +141,7 @@ Creates a `.eslintcache` file in which ESLint cache is stored. Running this comm
 ## 🎯 format
 
 ```
-yarn format
+npm format
 ```
 
 or
@@ -105,6 +162,7 @@ This is the structure of the files in the project:
     │
     ├── public                  # public files (favicon, .htaccess, manifest, ...)
     ├── src                     # source files
+    │   ├── __tests__           # all test files
     │   ├── components
     │   ├── pages
     │   ├── resources           # images, constants and other static resources
@@ -112,29 +170,33 @@ This is the structure of the files in the project:
     │   │   ├── actions         # store's actions
     │   │   └── reducers        # store's reducers
     │   ├── styles
-    │   ├── tests               # all test files
     │   ├── types               # data interfaces
     │   ├── utility             # utilities functions and custom components
     │   ├── App.tsx
     │   ├── index.tsx
-    │   ├── react-app-env.d.ts
     │   ├── RootComponent.tsx   # React component with all the routes
     │   ├── serviceWorker.ts
-    │   └── setupTests.ts
+    │   ├── setupTests.ts
+    │   └── vite-env.d.ts
+    ├── .env
+    ├── .eslintignore
     ├── .eslintrc.js
     ├── .gitignore
     ├── .prettierrc
+    ├── index.html
+    ├── jest.config.cjs
     ├── package.json
     ├── README.md
-    └── tsconfig.json
+    ├── tsconfig.json
+    └── vite.config.json
 ```
 
 # 📖 Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 #
 
-<p align="center">Bootstrapped with Create React App.</p>
+<p align="center">Bootstrapped with Vite.</p>

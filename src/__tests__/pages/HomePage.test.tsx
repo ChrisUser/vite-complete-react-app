@@ -1,4 +1,8 @@
+/**
+ * @jest-environment jsdom
+ */
 import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
 import HomePage from '../../pages/HomePage'
 
 test('renders hello world message', () => {
