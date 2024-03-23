@@ -1,0 +1,32 @@
+@import './_variables'
+
+=flexbox($justify, $align, $direction, $wrap)
+  display: flex
+  justify-content: $justify
+  align-items: $align
+  flex-direction: $direction
+  flex-wrap: $wrap
+
+=rectangle($width, $height)
+  width: $width
+  height: $height
+
+=square($size)
+  +rectangle($size, $size)
+
+@mixin breakpoint($class)
+  @if $class == '<phone'
+    @media (max-width: $phone-size)
+      @content
+      
+  @if $class == '<tablet'
+    @media (max-width: $tablet-size)
+      @content
+
+  @if $class == '<desktop'
+    @media (max-width: $desktop-size)
+      @content
+
+  @if $class == '>desktop'
+    @media (min-width: $desktop-size)
+      @content
