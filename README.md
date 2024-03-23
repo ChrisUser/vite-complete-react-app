@@ -4,8 +4,6 @@
 
 To clone and use this template type the following commands:
 
-## npm
-
 ```sh
 npx degit chrisuser/vite-complete-react-app my-app
 ```
@@ -14,23 +12,19 @@ npx degit chrisuser/vite-complete-react-app my-app
 cd my-app
 ```
 
+Then, based on your package manager:
+
+## npm
+
 ```sh
 npm install
 ```
 
 ```sh
-npm dev
+npm run dev
 ```
 
 ## yarn
-
-```sh
-yarn degit chrisuser/vite-complete-react-app my-app
-```
-
-```sh
-cd my-app
-```
 
 ```sh
 yarn
