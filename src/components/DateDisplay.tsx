@@ -1,4 +1,3 @@
-import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 
 const DateDisplay: React.FC = () => {
@@ -8,15 +7,16 @@ const DateDisplay: React.FC = () => {
      * On component render sets the date state to current date and time
      */
     useEffect(() => {
+        setDate(new Date().toString())
         const interval = setInterval(() => {
-            setDate(moment().toDate().toString())
+            setDate(new Date().toString())
         }, 1000)
         return () => clearInterval(interval)
     }, [])
 
     return (
-        <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <span style={{ color: 'orange' }}>{date}</span>
+        <div className="relative w-full flex flex-col items-center justify-center">
+            <span className="text-orange">{date}</span>
         </div>
     )
 }
